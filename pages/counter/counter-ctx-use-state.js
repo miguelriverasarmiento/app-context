@@ -20,7 +20,9 @@ const AddOneButton = () => {
 
     return (
         <div>
-            <button onClick={() => setCounter((v) => v + 1)}>Add One</button>
+            <button onClick={() => setCounter((v) => v + 1)}>
+                Add One
+            </button>
         </div>
     );
 }
@@ -30,7 +32,9 @@ const Counter = () => {
     const [counter] = useContext(CounterContext)
    
     return (
-        <div>Counter: { counter }</div>
+        <div>
+            Counter: { counter }
+        </div>
    );
 }
 
