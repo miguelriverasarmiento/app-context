@@ -81,8 +81,6 @@ export default function CounterUseStatePage() {
         <div>
             <CounterUseState />
             <CounterUseState />
-            <CounterUseState />
-            <CounterUseState />
         </div>
     );  
 }

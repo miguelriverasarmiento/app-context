@@ -24,8 +24,8 @@ export default function CounterUseState() {
         <div>
             <Container>
                 <AddOneButton setCounter={setCounter} />
+                <Counter counter={counter} />
             </Container>
-            <Counter counter={counter} />
         </div>
     );
 }
