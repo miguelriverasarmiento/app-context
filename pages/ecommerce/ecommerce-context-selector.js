@@ -4,7 +4,8 @@ import {
     useAddToCart,
     useUser,
     useCartCount,
-    } from "./store-zustand";
+    StoreContextProvider,
+    } from "./store-context-selector";
 
 const LoginSection = () => {
     
@@ -48,7 +49,7 @@ const CartCountSection = () => {
     );
 }
 
-export default function ZustandPage() {
+function ContextPage() {
 
     return(
         <div>
@@ -58,4 +59,13 @@ export default function ZustandPage() {
             <CartCountSection />
         </div>
     );
+}
+
+export default function ContextPageWrapper() {
+
+    return(
+        <StoreContextProvider>
+            <ContextPage />
+        </StoreContextProvider>
+    )
 }
